@@ -95,6 +95,23 @@ contract('SingularityNetToken', function(accounts) {
 
         }
 
+        const burnAndVerify = async (_amount, _accountFrom) => {
+
+            const _amountBN = new BigNumber(_amount);
+
+            const totalSupply_b = await singularityNetToken.totalSupply.call();
+            const sender_bal_b = (await singularityNetToken.balanceOf(_accountFrom));
+
+            await singularityNetToken.burn(_amountBN.toString(), {from:_accountFrom});
+
+            const sender_bal_a = (await singularityNetToken.balanceOf(_accountFrom));
+            const totalSupply_a = await singularityNetToken.totalSupply.call()
+
+            assert.equal(_amountBN.plus(totalSupply_a).toString(), totalSupply_b);
+            assert.equal(_amountBN.plus(sender_bal_a).toString(), sender_bal_b);
+
+        }
+
         const getPauserRole = async () => {
 
             return await singularityNetToken.PAUSER_ROLE.call();
@@ -216,6 +233,18 @@ contract('SingularityNetToken', function(accounts) {
         const mintAmountBN = new BigNumber("1000000000000000");
         await mintAndVerify(accounts[8], mintAmountBN.toString());
     });
+
+    it("6. Burn Tokens Functionality", async function() 
+    {
+        // accounts[0] -> Contract Owner
+
+        // burn the tokens from account[1]
+        const burnAmountBN = new BigNumber("10000000000");
+        await burnAndVerify(burnAmountBN.toString(), accounts[1]);
+
+    });
+
+    
 
 
 

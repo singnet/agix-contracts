@@ -24,7 +24,7 @@ contract SingularityNetToken is Context, AccessControl, ERC20Burnable, ERC20Paus
     bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
     bytes32 public constant PAUSER_ROLE = keccak256("PAUSER_ROLE");
 
-    uint256 public constant INITIAL_SUPPLY = 2000000000 * 10**uint256(8);
+    //uint256 public constant INITIAL_SUPPLY = 2000000000 * 10**uint256(8);
 
     /**
      * @dev Grants `DEFAULT_ADMIN_ROLE`, `MINTER_ROLE` and `PAUSER_ROLE` to the
