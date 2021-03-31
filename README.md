@@ -1,1 +1,2 @@
-# agi-v2
+# snet-token-contracts
+snet token contracts
