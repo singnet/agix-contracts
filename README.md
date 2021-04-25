@@ -32,3 +32,6 @@ npm run package-npm
 
 ## Release
 SingularityNetToken artifacts are published to NPM: https://www.npmjs.com/package/singularitynet-token-contracts
+=======
+ERC-20 implementation for SingularityNET AGI Token
+
