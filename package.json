@@ -1,6 +1,6 @@
 {
   "name": "singularitynet-token-contracts",
-  "version": "3.0.1",
+  "version": "3.0.0",
   "private": true,
   "description": "Includes token contracts, migrations, tests",
   "directories": {
