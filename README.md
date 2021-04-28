@@ -2,7 +2,7 @@
 Includes token contracts, migrations, tests
 
 ### SingularityNetToken
-* ERC-20 implementation for SingularityNET AGI Token V2
+* ERC-20 implementation for SingularityNET AGIX Token
 
 ## Deployed Contracts
 * SingularityNetToken (Mainnet): 
