@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/singnet/agi-v2.git"
+    "url": "git+https://github.com/singnet/agix-contracts.git"
   },
   "author": "SingularityNET",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/singnet/agi-v2/issues"
+    "url": "https://github.com/singnet/agix-contracts/issues"
   },
-  "homepage": "https://github.com/singnet/agi-v2#readme",
+  "homepage": "https://github.com/singnet/agix-contracts#readme",
   "dependencies": {
     "@openzeppelin/contracts": "^3.2.0",
     "@truffle/contract": "^4.2.23",
