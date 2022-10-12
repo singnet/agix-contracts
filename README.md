@@ -5,9 +5,10 @@ Includes token contracts, migrations, tests
 * ERC-20 implementation for SingularityNET AGIX Token
 
 ## Deployed Contracts
-* SingularityNetToken (Mainnet): 
-* SingularityNetToken (Kovan): 
-* SingularityNetToken (Ropsten) : 
+* SingularityNetToken (Mainnet): [0x5B7533812759B45C2B44C19e320ba2cD2681b542](https://etherscan.io/address/0x5B7533812759B45C2B44C19e320ba2cD2681b542)
+* SingularityNetToken (Kovan): 0x20802d1a9581b94e51db358C09e0818d6bd071b4
+* SingularityNetToken (Ropsten) : 0xA1e841e8F770E5c9507E2f8cfd0aA6f73009715d
+* SingularityNetToken (Goerli) : [0xdd4292864063d0DA1F294AC65D74d55a44F4766C](https://goerli.etherscan.io/address/0xdd4292864063d0DA1F294AC65D74d55a44F4766C)
 
 ## Requirements
 * [Node.js](https://github.com/nodejs/node) (12+)

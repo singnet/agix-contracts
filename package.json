@@ -1,6 +1,6 @@
 {
   "name": "singularitynet-token-contracts",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "private": true,
   "description": "Includes token contracts, migrations, tests",
   "directories": {
@@ -26,9 +26,11 @@
   "dependencies": {
     "@openzeppelin/contracts": "^3.2.0",
     "@truffle/contract": "^4.2.23",
-    "@truffle/hdwallet-provider": "^1.1.0"
+    "@truffle/hdwallet-provider": "^1.1.0",
+    "truffle-plugin-verify": "^0.5.31"
   },
   "devDependencies": {
+    "bignumber.js": "^9.0.1",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "chai-bignumber": "^2.0.2",
@@ -37,7 +39,6 @@
     "ethereumjs-util": "^5.2.0",
     "fs-extra": "^5.0.0",
     "moment": "^2.22.2",
-    "webpack-cli": "^3.1.2",
-    "bignumber.js": "^9.0.1"
+    "webpack-cli": "^3.1.2"
   }
 }
