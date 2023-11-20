@@ -82,16 +82,6 @@ module.exports = {
     // network_id: 2111,   // This network is yours, in the cloud.
     // production: true    // Treats this network as if it was a public net. (default: false)
     // }
-    kovan: {
-      gasPrice: 50000000000,
-      provider: () => provider("https://kovan.infura.io/v3/" + process.env.InfuraKey),
-      network_id: "42" // Kovan network ID
-    },
-    ropsten: {
-        gasPrice: 50000000000,
-        provider: () => provider("https://ropsten.infura.io/v3/" + process.env.InfuraKey),
-        network_id: "3", // ropsten network ID, 
-    },
     goerli: {
       gasPrice: 1000000000,
       provider: () => provider("https://goerli.infura.io/v3/" + process.env.InfuraKey),
@@ -102,7 +92,6 @@ module.exports = {
       provider: () => provider("https://mainnet.infura.io/v3/" + process.env.InfuraKey),
       network_id: "1" // mainnet network ID
     },
-
   },
 
   // Set default mocha options here, use special reporters etc.
