@@ -1,0 +1,44 @@
+{
+  "name": "singularitynet-token-contracts",
+  "version": "3.0.1",
+  "private": true,
+  "description": "Includes token contracts, migrations, tests",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "package-npm": "node scripts/package-npm.js",
+    "deploy": "scripts/truffle-migrate",
+    "compile": "node_modules/.bin/truffle compile",
+    "test": "rm -rf build && node_modules/.bin/truffle test",
+    "test-develop": "rm -rf build && node_modules/.bin/truffle test --network develop"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/singnet/agix-contracts.git"
+  },
+  "author": "SingularityNET",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/singnet/agix-contracts/issues"
+  },
+  "homepage": "https://github.com/singnet/agix-contracts#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^3.2.0",
+    "@truffle/contract": "^4.2.23",
+    "@truffle/hdwallet-provider": "^1.1.0",
+    "truffle-plugin-verify": "^0.5.31"
+  },
+  "devDependencies": {
+    "bignumber.js": "^9.0.1",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "chai-bignumber": "^2.0.2",
+    "eth-gas-reporter": "^0.1.12",
+    "ethereumjs-abi": "^0.6.5",
+    "ethereumjs-util": "^5.2.0",
+    "fs-extra": "^5.0.0",
+    "moment": "^2.22.2",
+    "webpack-cli": "^3.1.2"
+  }
+}
