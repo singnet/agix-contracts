@@ -11,7 +11,7 @@ Includes token contracts, deployments, tests
 ## Installation
 
 ```bash
-    npm install
+npm install
 ```
 
 ## Compilation
